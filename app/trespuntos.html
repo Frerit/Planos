@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>plano</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+        <div class="header">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trespuntos.html">Graficar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-1">
+                        <label for="staticEmail2" class="sr-only">P</label>
+                        <input type="text" readonly class="form-control-plaintext" id="p" value="P">
+                    </div>
+                    <div class="col">
+                        <input id="px" type="text" class="form-control" placeholder="X">
+                    </div>
+                    <div class="col">
+                        <input id="py" type="text" class="form-control" placeholder="Y">
+                    </div>
+                    <div class="col">
+                        <input id="pz" type="text" class="form-control" placeholder="Z">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="staticEmail2" class="sr-only">Q</label>
+                        <input type="text" readonly class="form-control-plaintext" id="q" value="Q">
+                    </div>
+                    <div class="col">
+                        <input id="qx" type="text" class="form-control" placeholder="X">
+                    </div>
+                    <div class="col">
+                        <input id="qy" type="text" class="form-control" placeholder="Y">
+                    </div>
+                    <div class="col">
+                        <input id="qz" type="text" class="form-control" placeholder="Z">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="staticEmail2" class="sr-only">R</label>
+                        <input type="text" readonly class="form-control-plaintext" id="r" value="R">
+                    </div>
+                    <div class="col">
+                        <input id="rx" type="text" class="form-control" placeholder="X">
+                    </div>
+                    <div class="col">
+                        <input id="ry" type="text" class="form-control" placeholder="Y">
+                    </div>
+                    <div class="col">
+                        <input id="rz" type="text" class="form-control" placeholder="Z">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col align-self-center">
+
+                    </div>
+                    <div class="col-3 align-self-end form-group">
+                        <button onclick="graficartrespuntos()" class="btn btn-primary mt-2 btn-lg btn-block">Graficar</button>
+
+                    </div>
+                </div>
+
+                <div id="myDiv" style="width: 100%; height: 500px;"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+        </div>
+    </div>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- endbuild -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
